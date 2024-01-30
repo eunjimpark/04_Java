@@ -35,7 +35,14 @@ public class JavaTest {
 		
 		System.out.println(100+30+"입니다");
 		
+		//사칙연산 우선순위 적용
+		//먼저 연산하고싶으면 소괄호()로 묶어준다
 		System.out.println("합계:" + (2222+333) +"원");
+		
+		/* Java API DOC 확인 : 궁굼한 것 클릭 ->shift + F2
+		 * 
+		 * Java API DOC ==자바가 만들어서 제공하는 코드에 대한 설명 문서
+		 * */
 		
 		
 		
