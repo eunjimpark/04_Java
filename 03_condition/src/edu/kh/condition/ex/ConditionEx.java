@@ -192,7 +192,7 @@ public class ConditionEx {
 		if(total<60) {
 			System.out.printf("FAIL[점수:"+total+"(평균미달)]");
 			
-		}else if(total>=60){
+		}else {
 			if(kor<40){
 				miman += "국어";
 				}		
@@ -208,13 +208,13 @@ public class ConditionEx {
 			if(sci<40){
 				miman += "과탐";
 			 }
-			System.out.println("FAIL [40점 미만 과목 :"+miman+"]");
-		}	
-		else {
+			
+	 	if(miman==null) {
 			System.out.printf("PASS[점수:"+total+"/100]");
+	 	} else {
+			System.out.println("FAIL [40점 미만 과목 :"+miman+"]");		
+	 	}	
+	
 		}
 	}
-
-	
-	
 }

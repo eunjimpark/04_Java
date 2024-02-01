@@ -14,15 +14,10 @@ public class OperatorRun {
 
 		//ex.test();
 		//ex.method1(); //3의배수 확인
-		
 		//ex.method2();
-		
 		//ex.method3();
 		
-		ex.method4();
-		
-		
-		
+		ex.method4();	
 		
 	}
 }
