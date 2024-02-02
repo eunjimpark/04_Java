@@ -61,7 +61,6 @@ public class ArrayEx2 {
 	
 	
 	//2차원배열
-	
 	public void method3() {
 		//2차원배열 선언
 		int[][] arr = new int[2][3]; //3칸짜리 1차원배열 2개
