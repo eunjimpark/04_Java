@@ -40,7 +40,11 @@ public class Child2 extends Parent {
 	}
 	
 	
-	
+	//toString 오버라이딩
+	@Override
+	public String toString() {
+		return super.toString() + "\nChild2:" + smartPhone;
+	}
 	
 	
 	
