@@ -132,6 +132,7 @@ public class ListService {
 
 
 	public void bookManage() {
+		
 		List<Book> bookList = new ArrayList<Book>();
 		Scanner sc = new Scanner(System.in);
 		
