@@ -112,17 +112,93 @@ public class JavaAPIService {
 		
 		
 		//String 이어쓰기를 이용한 방법
+		//->코드는 짧지만 효율이 구림
 		long test3 = 12345678910L;
 		String change3 = test3+"";
+	}
+	
+	public void method3() {
 		
+		String str = "hello";
+		System.out.println(str);
+		System.out.println(System.identityHashCode(str)); //주소값을 이용해서만든 해쉬코드
+		
+		str = "world";
+		System.out.println(str);
+		
+		str += "!!!";
+		System.out.println(str);
 		
 		
 	}
 	
 	
 	
+	public void method4() {
+		
+		String temp1 = "Hello!!";
+		String temp2 = "Hello!!";
+		
+		System.out.println(System.identityHashCode(temp1));
+		System.out.println(System.identityHashCode(temp2));
+		
+		// 같음을 비교
+		System.out.println("저장된 값 비교 : " + temp1.equals(temp2) );
+		
+		//변수에 저장된 값(주소)비교
+		System.out.println("주소를 비교 : " + temp1==temp2 );
+	}
 	
 	
+	public void method5() {
+		
+		String temp1 = "abcd"; //리터럴로생성
+		String temp2 = new String("abcd");
+		String temp3 = new String("abcd");
+		
+		System.out.println("temp1 : " + System.identityHashCode(temp1));
+		System.out.println("temp2 : " + System.identityHashCode(temp2));
+		System.out.println("temp3 : " + System.identityHashCode(temp3));
+		
+		//셋다 주소가 다름 ==abcd를 재활용 X
+		//값은 전부 같지만 전부 다른객체 
+		
+	}
+	
+	
+	public void method6() {
+		
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("오늘점심은");
+		sb.append("무엇을 먹을까요?");
+		
+		sb.insert(0, "2월14일");
+		System.out.println(System.identityHashCode(sb));
+		
+		// identityHashCode 값이 일정함 
+		// == 참조하는 객체가 변하지 않음
+		// == 객체 내에 값만 수정되고 있다 == 가변성 
+		
+		
+		
+		System.out.println(sb);
+		
+		//StringBuilder ->String 변환
+		
+		String temp = sb.toString(); //객체에 저장된 필드를 문자열로 반환
+		
+		//String[] 문자열.split("구분자")
+		//-문자열을 "구분자"를 기준으로 쪼개어 String[]로 반환
+		
+		String[] arr= temp.split(" ");
+		
+		for(String str: arr) {
+			System.out.println(str);
+		}
+	
+	
+	}
 	
 	
 	

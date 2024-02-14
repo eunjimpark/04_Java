@@ -150,10 +150,10 @@ public class SetService {
 	
 	
 	public void method3() {
-		Person p1 = new Person('홍길동",25,'남');
-		Person p2 = new Person("홍길동",25,"남");
-		Person p3 = new Person("홍길동",30,"남");
-		Person p4 = new Person("김길순",20,"여");
+		Person p1 = new Person("홍길동",25,'남');
+		Person p2 = new Person("홍길동",25,'남');
+		Person p3 = new Person("홍길동",30,'남');
+		Person p4 = new Person("김길순",20,'여');
 		
 		// hashCode() : 객체 식별 번호(정수)
 		// - 같은 필드 값을 가진 객체는 번호가 같다!!
